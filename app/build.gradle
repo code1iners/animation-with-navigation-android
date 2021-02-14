@@ -19,7 +19,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-kapt'
-
+// note. Add for pass arguments between navigation (safe args)
 apply plugin: 'androidx.navigation.safeargs'
 
 android {

@@ -23,7 +23,9 @@ class TitleFragment: Fragment() {
 //        }
         // note. able to change next code
         // note. play game button click listener
-        binding.playButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
+        binding.playButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+        }
 
         // note. Tells Android that the Fragment has a menu (overflow menu init).
         setHasOptionsMenu(true)
